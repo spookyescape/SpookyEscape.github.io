@@ -1,4 +1,4 @@
-const CHANNEL_ID = 'nbbXvx8MSGQGdZzA';
+const CLIENT_ID = 'nbbXvx8MSGQGdZzA';
 const drone = new ScaleDrone(CLIENT_ID, {
     data: { // Will be sent out as clientData via events
       name: getRandomName(),
