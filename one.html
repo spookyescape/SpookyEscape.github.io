@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="Styles.css">   
-    </head>
-    <body>
-        <p>Enter passwords here</p>
-        <input id="myInput" type="text">
-        <button onclick="enteredPassword()">Submit</button>
 
-        <h3>Clue 1:</h3>
-        <p id="1"></p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
 
-        <h3>Clue 2:</h3>
-        <p id="2"></p>
+<body>
+    <p>Enter passwords here</p>
+    <input id="myInput" type="text">
+    <button onclick="enteredPassword()">Submit</button>
 
-        <h3>Clue 3:</h3>
-        <p id="3"></p>
+    <h3>Clue 1:</h3>
+    <p id="1"></p>
 
-        <h3>Final clue:</h3>
-        <p id="4"></p>
+    <h3>Clue 2:</h3>
+    <p id="2"></p>
 
-        <script src="./roomOne.js"></script>
-    </body>
+    <h3>Clue 3:</h3>
+    <p id="3"></p>
+
+    <h3>Final clue:</h3>
+    <p id="4"></p>
+
+    <script>
+        function enteredPassword() {
+            var input = document.getElementById("myInput").value;
+            var text;
+
+            if (input === "yes") {
+                text = "yes";
+                document.getElementById("1").innerHTML = text;
+            }
+
+
+        }
+    </script>
+</body>
+
 </html>
