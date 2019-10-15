@@ -23,6 +23,33 @@
         <h3>Final clue:</h3>
         <p id="4"></p>
 
-        <script src="./roomTwo.js"></script>
+        <script>
+                function enteredPassword() {
+                    var input = document.getElementById("myInput").value;
+                    var text;
+        
+                    if (input === "JamesIsCool") {
+                        text = "Yeah I am! Time to look at my last post on the Facebook page. There you will find the combination";
+                        document.getElementById("1").innerHTML = text;
+                    }
+                    if (input === "PumpkinPatch")
+                    {
+                        text = "Right. Good job. How is that crossword going?";
+                        document.getElementById("2").innerHTML = text;
+                    }
+                    if (input === "trngliorat")
+                    {
+                        text = "Let your heart lead you.";
+                        document.getElementById("3").innerHTML = text;
+                    }
+                    if (input === "hapyhalloween")
+                    {
+                        text = "Up. You have solved the last clue, let the other room know, run to the high council room and solve the last lock";
+                        document.getElementById("4").innerHTML = text;
+                    }
+        
+        
+                }
+            </script>
     </body>
 </html>
